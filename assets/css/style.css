@@ -1670,7 +1670,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #DC5F00;
+  background: linear-gradient(-45deg, #dc5f00, rgb(0 0 0 / 90%));
 }
 
 #footer .footer-newsletter {
