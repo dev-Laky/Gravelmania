@@ -1857,10 +1857,14 @@ section {
   }
 }
 
-/* ======= Costume ====== */
+/* ======= Custom ====== */
 
 .gravelmania-logo {
   width: 4rem;
+}
+
+.gravelmania-logo-details {
+  width: 2rem;
 }
 
 .about-text {
