@@ -1325,6 +1325,14 @@ section {
   }
 }
 
+@media (min-width: 992px) {
+  .mt-lg-0 {
+    margin-top: 0!important;
+    min-width: 27.5rem;
+    margin: 0 auto 30px auto;
+  }
+}
+
 @media (max-width: 767px) {
   .pricing .box {
     max-width: 80%;
