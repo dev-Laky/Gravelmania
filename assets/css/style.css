@@ -1734,7 +1734,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f3f5fa;
+  background: #000000;
   min-height: 40px;
   margin-top: 72px;
 }
@@ -1981,4 +1981,14 @@ section {
 .about-div {
   max-width: 45rem;
   margin: auto;
+}
+
+/* ======= Inner Page ====== */
+
+.home-text {
+  color: #a3a3a3;
+}
+
+.home-text:hover {
+  color: #DC5F00;
 }
