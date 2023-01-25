@@ -7,11 +7,11 @@
 
   <title>Details</title>
   <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="gravelmania gravel bike race" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.ico" rel="icon">
-  <link href="assets/img/gravelmania_logo.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -41,16 +41,18 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
-      <img class="logo me-auto gravelmania-logo-details" src="assets/img/Gravelmania Logo Ebene_ohne 8bar_SW.png" alt="gravelmania-logo">
+
       <!--<h1 class="logo me-auto"><a href="index.html">Arsha</a></h1>-->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo me-auto"><img src="assets/img/Gravelmania Logo Ebene_ohne 8bar_SW.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">Über uns</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Was wir bieten</a></li>
-          <li><a class="nav-link   scrollto" href="index.html#portfolio">Eindrücke</a></li>
-          <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="inner-page.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#event">Events</a></li>
+          <li><a class="nav-link scrollto" href="#gravel-cup">Gravelmania Cup</a></li>
+          <li><a class="nav-link scrollto" href="#about">Über uns</a></li>
+          <!--<li><a class="nav-link scrollto" href="#team">Team</a></li>-->
           <!--
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -69,8 +71,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>-->
-          <li><a class="nav-link scrollto" href="index.html#contact">Kontakt</a></li>
-          <li><a class="getstarted scrollto" href="index.html#about">Los geht's</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Kontakt</a></li>
+          <li><a class="getstarted scrollto" href="#event">Los geht's</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -85,7 +87,7 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><a class="home-text" href="index.html">Home</a></li>
           <li>Eindruck Details</li>
         </ol>
         <h2>Details</h2>
@@ -94,7 +96,7 @@
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <section id="portfolio-details" class="portfolio-details section-bg">
       <div class="container">
 
         <div class="row gy-4">
@@ -144,8 +146,8 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-
+  <footer id="footer" class="">
+    <!-- STAY TUNED "SECTION"
     <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
@@ -158,19 +160,19 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
-    <div class="footer-top">
+    <div class="footer-top"> <!--style="border-top: 2.5px solid #DC5F00!important"-->
       <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>Gravelmania</h3>
             <p>
-              Musterstraße 10b <br>
-              Brandenburg a.d.H, 00000<br>
+              <!--Musterstraße 10b <br>-->
+              Brandenburg a.d.H<br>
               Deutschland <br><br>
-              <strong>Phone:</strong> 0176 54581484<br>
+              <!--<strong>Phone:</strong> 0176 54581484<br>-->
               <strong>Email:</strong> david@gravelmania.cc<br>
             </p>
           </div>
@@ -178,10 +180,10 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Was wir bieten</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Impressum</a></li>
+              <li><iconify-icon icon="bx:chevron-right" style="color: white;"></iconify-icon> <a href="#">Home</a></li>
+              <li><iconify-icon icon="bx:chevron-right" style="color: white;"></iconify-icon> <a href="#">Über uns</a></li>
+              <li><iconify-icon icon="bx:chevron-right" style="color: white;"></iconify-icon> <a href="#">Was wir bieten</a></li>
+              <li><iconify-icon icon="bx:chevron-right" style="color: white;"></iconify-icon> <a href="#">Impressum</a></li>
             </ul>
           </div>
           
@@ -201,11 +203,10 @@
             <h4>Soziale Netzwerke</h4>
             <p>Lust auf mehr Gravelcontent?</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://de-de.facebook.com/LKKCyclingTeam" target="_blank" rel="noopener noreferrer" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/gravelmania_cc/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.strava.com/clubs/1073987" target="_blank" rel="noopener noreferrer" class="bi-strava"><i></i></a>
+              <a href="https://www.komoot.de/user/gravelmaniacup" target="_blank" rel="noopener noreferrer"><iconify-icon icon="simple-icons:komoot" style="color: rgb(0, 0, 0);" width="16" height="16"></iconify-icon></a>
             </div>
           </div>
 
@@ -228,19 +229,22 @@
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  
+    <!-- Iconify JS File -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
 </body>
 
