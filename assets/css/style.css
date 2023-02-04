@@ -2164,3 +2164,27 @@ section {
     height: 370%;
   }
 }
+
+/*---------------------
+ Event Page
+-----------------------*/
+
+.sign-up-btn {
+  width: 9rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 499px) {
+  .sign-up-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .sign-up-btn-div {
+    text-align: center;
+  }
+
+  .event-description {
+    font-size: 0.95rem;
+  }
+}
