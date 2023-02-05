@@ -2174,8 +2174,25 @@ section {
   margin-top: 0.5rem;
 }
 
+.tender-up-btn {
+  width: 9rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 800px) {
+  .tender-up-btn {
+    margin-left: 0.8rem;
+  }
+}
+
+
 @media (max-width: 499px) {
   .sign-up-btn {
+    width: 100%;
+    margin-top: 1rem
+  }
+
+  .tender-up-btn {
     width: 100%;
     margin-top: 1rem;
   }
