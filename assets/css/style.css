@@ -2205,3 +2205,17 @@ section {
     font-size: 0.95rem;
   }
 }
+
+/*---------------------
+ Rules Page
+-----------------------*/
+
+.nav-pills .nav-link.active{
+  background-color: #DC5F00;
+}
+
+.nav {
+  --bs-nav-link-color: white;
+  --bs-nav-link-hover-color: #DC5F00;
+
+}
