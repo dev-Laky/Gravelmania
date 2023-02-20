@@ -10,7 +10,6 @@
 'use strict';
 
 (function ($) {
-
     
 
     /*------------------
@@ -33,11 +32,35 @@
     // For demo preview end
     
 
-    // Use this for real timer date
-    var timerdate = "2023/03/31";
+    // get correct data from json file
+    fetch('assets/data/dates.json')
+        .then(response => response.json())
+        .then(data => {
+            get_data_proc(data);
+        });
+    
+    function get_data_proc(data) {
+        // get current path
+        const currentPath = window.location.pathname;
 
-	$("#countdown").countdown(timerdate, function(event) {
-        $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Tage</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Stunden</p> </div>" + "<div class='cd-item item-3'><span>%M</span> <p>Minuten</p> </div>" /*+ "<div class='cd-item'><span>%S</span> <p>Secs</p> </div>"*/));
-    });
+        // seperate /.../file.html --> file.html
+        var filename = currentPath.replace(/^.*[\\\/]/, '')
+
+        // Use this for real timer date
+        var timerdate = "2000/12/31";
+
+        for (let i = 0; i < data.events.length; i++) {
+            if(filename == data.events[i].name){
+                timerdate = data.events[i].date;
+            }
+          }
+
+        $("#countdown").countdown(timerdate, function(event) {
+            $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Tage</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Stunden</p> </div>" + "<div class='cd-item item-3'><span>%M</span> <p>Minuten</p> </div>" /*+ "<div class='cd-item'><span>%S</span> <p>Secs</p> </div>"*/));
+        });
+    }
+    
+
+    
 
 })(jQuery);
