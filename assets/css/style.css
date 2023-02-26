@@ -1047,7 +1047,7 @@ section {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1000px) {
   .cta .cta-btn-container {
     display: flex;
     align-items: center;
