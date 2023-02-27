@@ -730,7 +730,7 @@ section {
   margin-bottom: 0;
 }
 
-.about .content .btn-learn-more {
+.btn-learn-more {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -750,7 +750,7 @@ section {
   margin: 25px auto 0 auto;
 }
 
-.about .content .btn-learn-more:hover {
+.btn-learn-more:hover {
   background: #DC5F00;
   color: #fff;
   text-decoration: none;
@@ -1053,6 +1053,10 @@ section {
     align-items: center;
     justify-content: flex-end;
   }
+}
+
+.dropdown-item:hover {
+  background-color: #DC5F00;
 }
 
 /*--------------------------------------------------------------
