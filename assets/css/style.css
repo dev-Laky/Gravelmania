@@ -682,6 +682,23 @@ section {
   background-size: 110%;
 }
 
+.list-group-item {
+  color: white;
+  background-color: var(--bs-black);
+  border: var(--bs-list-group-border-width) solid var(--bs-secondary);
+}
+
+.card-header {
+  background-color: rgb(255, 123, 0);
+  color: white;
+}
+
+@media (min-width: 990px) {
+  .list {
+    padding-top: 12.5%!important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Gravelmania Cup
 --------------------------------------------------------------*/
@@ -2245,4 +2262,12 @@ section {
 .accordion-button:not(.collapsed) {
   background: linear-gradient(-45deg, #dc5f00, rgb(0 0 0 / 90%));
   color: #DC5F00;
+}
+
+.card-gc {
+  --bs-card-bg: var(--bs-dark);
+}
+
+.card-gc:hover {
+  --bs-card-bg: #dc5f0085;
 }
