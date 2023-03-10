@@ -693,11 +693,12 @@ section {
   color: white;
 }
 
+/*
 @media (min-width: 990px) {
   .list {
     padding-top: 12.5%!important;
   }
-}
+}*/
 
 /*--------------------------------------------------------------
 # Gravelmania Cup
@@ -1215,6 +1216,7 @@ section {
   padding: 0;
   font-size: 15px;
 }
+
 
 .portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
