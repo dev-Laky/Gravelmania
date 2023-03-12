@@ -1,11 +1,4 @@
-/*  ---------------------------------------------------
-    Template Name: Manup
-    Description: Manup Event HTML Template
-    Author: Colorlib
-    Author URI: http://colorlib.com
-    Version: 1.0
-    Created: Colorlib
----------------------------------------------------------  */
+
 
 'use strict';
 
@@ -43,7 +36,7 @@
 
     window.onload = function() {
         let cookie = getCookie("cookies");
-        if(cookie != "true"){
+        if(cookie == "true"){
                 $(document).ready(function(){
                     $("#cookieconsent3").modal('show');
                 });
