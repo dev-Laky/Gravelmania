@@ -34,15 +34,23 @@
         }
         return "";
     }
-
+    
     document.getElementById("submit-cookies").onclick = setCookie("cookies", "true", 365);
+    document.getElementById("submit-cookie-delete").onclick = function(){
+        /* Cookie remove */
+        window.location.reload();
+    };
 
-    console.log(document.cookie);
-    let cookie = getCookie("cookies");
-    if(cookie != "true"){
-        $(document).ready(function(){
-            $("#cookieconsent3").modal('show');
-        });
-    }
+    window.onload = function() {
+        let cookie = getCookie("cookies");
+        if(cookie != "true"){
+                $(document).ready(function(){
+                    $("#cookieconsent3").modal('show');
+                });
+            }
+            else {
+                console.log("valid cookie");
+            }
+        };
 
 })(jQuery);
