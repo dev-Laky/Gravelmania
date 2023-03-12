@@ -2273,3 +2273,32 @@ section {
 .card-gc:hover {
   --bs-card-bg: #dc5f0085;
 }
+
+/*---------------------
+ custom styles
+-----------------------*/
+
+.orange-a {
+  color: #DC5F00;
+  text-decoration: none;
+}
+
+.orange-a:hover {
+  color: #5e5e5e;
+  text-decoration: none;
+}
+
+.orange-btn {
+  --bs-btn-color: white;
+  --bs-btn-bg: #DC5F00;
+  --bs-btn-hover-bg: var(--bs-secondary);
+}
+
+.orange-outline-btn {
+  --bs-btn-color: white;
+  --bs-btn-hover-color: white;
+  --bs-btn-bg: #ffffff00;
+  --bs-btn-border-color: #DC5F00;
+  --bs-btn-hover-bg: #DC5F00;
+
+}
