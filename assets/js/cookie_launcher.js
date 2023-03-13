@@ -1,5 +1,3 @@
-
-
 'use strict';
 
 (function ($) {
@@ -8,7 +6,7 @@
         const d = new Date();
         d.setTime(d.getTime() + (exdays*24*60*60*1000));
         let expires = "expires="+ d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        document.cookie = cname + "=" + cvalue + ";" + expires + "; path=/;";
         /*console.log(document.cookie);*/
     }
 
@@ -28,15 +26,13 @@
         return "";
     }
     
-    document.getElementById("submit-cookies").onclick = setCookie("cookies", "true", 365);
-    document.getElementById("submit-cookie-delete").onclick = function(){
-        /* Cookie remove */
-        window.location.reload();
-    };
+    document.getElementById("submit-cookies").addEventListener('click',function (){
+        setCookie("cookies", "true", 365);
+    });
 
     window.onload = function() {
         let cookie = getCookie("cookies");
-        if(cookie == "true"){
+        if(cookie != "true"){
                 $(document).ready(function(){
                     $("#cookieconsent3").modal('show');
                 });
