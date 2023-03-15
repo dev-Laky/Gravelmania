@@ -1586,7 +1586,7 @@ section {
 
 .contact .info p {
   padding: 0 0 10px 60px;
-  /*margin-bottom: 20px;*/
+  margin-bottom: 20px;
   font-size: 14px;
   color: #ffffff;
 }
@@ -2313,4 +2313,8 @@ section {
   .dorffest-size {
     font-size: 14.5px;
   }
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-danger);
 }
