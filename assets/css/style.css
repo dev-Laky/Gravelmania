@@ -1586,7 +1586,7 @@ section {
 
 .contact .info p {
   padding: 0 0 10px 60px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   font-size: 14px;
   color: #ffffff;
 }
@@ -2301,4 +2301,16 @@ section {
   --bs-btn-border-color: #DC5F00;
   --bs-btn-hover-bg: #DC5F00;
 
+}
+
+@media (max-width: 378px) {
+  .dorffest-size {
+    font-size: 13.6px;
+  }
+}
+
+@media (max-width: 400px) {
+  .dorffest-size {
+    font-size: 14.5px;
+  }
 }
