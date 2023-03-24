@@ -1017,7 +1017,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(150, 93, 24, 0.9), rgba(0, 0, 0, 0.9)), url("../img/titelbild.jpg") fixed center center;
+  background: linear-gradient(rgba(150, 93, 24, 0.9), rgba(0, 0, 0, 0.9)), url("../img/min-img/titelbild-min.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
