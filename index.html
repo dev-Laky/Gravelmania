@@ -945,15 +945,16 @@
 
           
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form bg-dark">
+            <form id="contact-form" role="form" class="php-email-form bg-dark">
+              <input type="hidden" name="contact_number">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <input type="text" name="user_name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <input type="email" class="form-control" name="user_email" id="email" required>
                 </div>
               </div>
               <div class="form-group">
@@ -1073,7 +1074,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!--<script src="assets/vendor/php-email-form/validate.js"></script>-->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
@@ -1085,6 +1086,10 @@
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/jquery.countdown.min.js"></script>
   <script src="assets/js/cookie_launcher.js"></script>
+
+  <!-- Contact Form JS File -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="assets/js/form/form.js"></script>
 
   <!-- Links -->
   <script src="assets/js/html-values/values.js"></script>
