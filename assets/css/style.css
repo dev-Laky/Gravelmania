@@ -2318,3 +2318,29 @@ section {
 .custom-tooltip {
   --bs-tooltip-bg: var(--bs-danger);
 }
+
+.line-arround {
+  overflow: hidden;
+  text-align: center;
+}
+
+.line-arround:before,
+.line-arround:after {
+  background-color: var(--bs-danger);
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.line-arround:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.line-arround:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
