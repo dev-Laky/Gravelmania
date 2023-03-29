@@ -945,7 +945,7 @@
 
           
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form id="contact-form" role="form" class="php-email-form bg-dark">
+            <form id="contact-form" role="form" class="php-email-form bg-dark" method="POST" action="?">
               <input type="hidden" name="contact_number">
               <div class="row">
                 <div class="form-group col-md-6">
@@ -968,10 +968,12 @@
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Deine Nachricht wurde versandt. Danke dir!</div>
               </div>
-              <div class="g-recaptcha" data-theme="dark" data-sitekey="6LfD_CslAAAAAJP4kdjZ3oTIq53U0B5e00siEWhW"></div>
-              <div class="text-center"><button type="submit">Senden</button></div>
+              <div class="row">
+                <div class="col-md-6" id="recaptcha"></div>
+                <div class="col-md-6 text-center pt-3" id="submit-btn" style="display: block;"><button type="submit">Senden</button></div>
+              </div>
             </form>
           </div>
 
@@ -1091,7 +1093,8 @@
   <!-- Contact Form JS File -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="assets/js/form/form.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="assets/js/form/recaptcha.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 
   <!-- Links -->
   <script src="assets/js/html-values/values.js"></script>
