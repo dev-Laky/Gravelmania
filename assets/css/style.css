@@ -689,7 +689,7 @@ section {
 }
 
 .card-header {
-  background-color: rgb(255, 123, 0);
+  background-color: #DC5F00;
   color: white;
 }
 
@@ -2275,6 +2275,19 @@ section {
 
 .card-gc:hover {
   --bs-card-bg: #dc5f0085;
+}
+
+/*---------------------
+ extern events
+-----------------------*/
+
+.extra-event-card {
+  list-style: none;
+  padding: 0;
+}
+
+.extra-event-card li+li {
+  margin-top: 0.85rem;
 }
 
 /*---------------------
