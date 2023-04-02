@@ -672,6 +672,7 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  transition: transform .5s;
 }
 
 .feature-icon-small {
@@ -680,7 +681,8 @@ section {
 }
 
 .card-cover:hover {
-  background-size: 110%;
+  /* background-size: 110%; */
+  transform: scale(1.1);
 }
 
 .list-group-item {
