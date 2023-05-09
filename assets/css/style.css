@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #a3a3a3;
+  background-color: #000000;
 }
 
 a {
@@ -671,6 +672,7 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  transition: transform .5s;
 }
 
 .feature-icon-small {
@@ -679,7 +681,8 @@ section {
 }
 
 .card-cover:hover {
-  background-size: 110%;
+  /* background-size: 110%; */
+  transform: scale(1.1);
 }
 
 .list-group-item {
@@ -689,7 +692,7 @@ section {
 }
 
 .card-header {
-  background-color: rgb(255, 123, 0);
+  background-color: #DC5F00;
   color: white;
 }
 
@@ -2275,6 +2278,19 @@ section {
 
 .card-gc:hover {
   --bs-card-bg: #dc5f0085;
+}
+
+/*---------------------
+ extern events
+-----------------------*/
+
+.extra-event-card {
+  list-style: none;
+  padding: 0;
+}
+
+.extra-event-card li+li {
+  margin-top: 0.85rem;
 }
 
 /*---------------------
