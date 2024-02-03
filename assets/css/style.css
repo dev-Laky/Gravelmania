@@ -640,6 +640,21 @@ section {
   transform: scale(1.1);
 }
 
+.clients i,
+.hover-zoom {
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+  filter: grayscale(100);
+}
+
+.clients i:hover,
+.hover-zoom:hover {
+  filter: none;
+  transform: scale(1.15);
+  color: #DC5F00;
+}
+
 @media (max-width: 768px) {
   .clients img {
     max-width: 40%;
