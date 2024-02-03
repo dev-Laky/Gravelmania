@@ -2,16 +2,16 @@
     "use strict";
 
     // set all href of a certain id to a specified link
-    function set_link(class_, link) {
-      const links = document.querySelectorAll(`.${class_}`);
+    function set_link(id_class, link) {
+        const links = document.querySelectorAll(`.${id_class}, #${id_class}`);
       for (let i = 0; i < links.length; i++) {
         links[i].href = link;
       }
     }
 
     // set all inner HTML of a certain id to a specified text
-    function set_inner_html(class_, text) {
-      const objects = document.querySelectorAll(`.${class_}`);
+    function set_inner_html(id_class, text) {
+        const objects = document.querySelectorAll(`.${id_class}, #${id_class}`);
       for (let i = 0; i < objects.length; i++) {
         objects[i].innerHTML = text;
       }
