@@ -1528,12 +1528,13 @@ section {
 
 .faq .faq-list li {
   padding: 20px;
-  background: #fff;
+  background: black;
   border-radius: 4px;
   position: relative;
 }
 
 .faq .faq-list a {
+  color: white;
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -1576,7 +1577,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #000000;
+  color: white;
 }
 
 .faq .faq-list a.collapsed .icon-show {
