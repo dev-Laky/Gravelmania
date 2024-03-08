@@ -1533,6 +1533,18 @@ section {
   position: relative;
 }
 
+.faq .faq-list .unstyled ul {
+
+}
+
+.faq .faq-list .unstyled li+li {
+
+}
+
+.faq .faq-list .unstyled li {
+  padding: 0.05rem;
+}
+
 .faq .faq-list a {
   color: white;
   display: block;
@@ -1572,12 +1584,12 @@ section {
 }
 
 .faq .faq-list a.collapsed {
-  color: #DC5F00;
+  color: white;
   transition: 0.5s;
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: white;
+  color: #dc5f00;
 }
 
 .faq .faq-list a.collapsed .icon-show {
